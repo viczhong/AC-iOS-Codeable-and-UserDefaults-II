@@ -9,4 +9,7 @@
 import Foundation
 
 struct Cat: Codable {
+    let name: String
+    let breed: String
+    let snack: String
 }

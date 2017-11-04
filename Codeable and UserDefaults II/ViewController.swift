@@ -9,18 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let manager = ResultsManager.manager
+    //    let requester = CatRequester()
+    //    let podRequestor = PodRequestor()
 
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
-		
-		let requester = CatRequester()
-		// add code starting here
-	}
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+        manager.makeUsersRequest()
 	}
 
 
